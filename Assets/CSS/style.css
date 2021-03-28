@@ -1,0 +1,69 @@
+/*SITEEEES UTEIIIS*/
+/* flatuicolors.com = site para pegar código de cores*/
+
+/*Estilos da página Index.html */
+/* Classe para centralizar texto */
+.center{
+    text-align: center;
+}
+
+/*Criando atributo para justificar texto*/
+
+.justificar{
+    text-align: justify;
+}
+
+.container{
+    display: flex;
+    flex-flow: row ; /*row wrap --> "quebra linha pra baixo" --> se eu quiser texto ao lado de imagem, tirar o wrap*/
+    justify-content: center; /*Justify-content:(orientação horizental) colocar no meio, esquerda ou direita */
+    align-items: center; /*(Orientação Vertical) colocar em cima, baixo ou meio*/
+}
+
+#menu li{  /* #menu --> especificando que é o IDMenu*/
+
+    display: inline; /* Alinhando botões*/
+    padding: 20px; /* Padding = espaçamento interno do conteúdo/ Separando botões*/ 
+    /*margin:30PX ;*/
+    /* margin DIFERENTE padding --> padding é um espaçamento DENTRO do elemento, enquanto MARGIN é FORA*/
+}
+/*Arrumando o estilo dos botões HOME e CONTATO*/
+/*o 'a' é porque tem um link*/
+#menu li a { 
+    text-decoration: none;
+    color:black;
+    font-size: 20px;
+}
+
+
+#menu li a:hover{ /*hover: "quando omouse tiver em cima do link, faça..."*/
+ color:grey;
+}
+
+/*Dando um espaço entre o texto e imagem*/
+.espaco{ 
+    padding: 30px;
+}
+
+/*Tornando a foto redonda --> tem que colocar a classe dentro da imagem*/
+.bordaFoto{
+    border-radius: 500px; /* arredonar imagem (borda)*/
+}
+
+/*Definindo tamanho dos ícones de redes sociais*/
+.tamanho{
+width: 50px;
+height:50px;
+padding: 0px;
+
+}
+/*Definindo margem embaixo do vídeo */
+.m-baixo{
+    margin-bottom: 50px;
+}
+
+/*CONTATO*/
+
+.m-esquerda{
+    margin-left: 50px;
+}

@@ -1,55 +1,110 @@
 <!DOCTYPE html>
+
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Perfil</title>
+        <!-- link = referenciando a aba css -->   
+        <!-- tag link = <link//rel=do que é o link//href = caminho do arquivo -->
+    <link rel="stylesheet" href="Assets/CSS/style.css">
 </head>
+
 <body>
-    <ul>
-        <li>        
-            <a href="index.html"> Início, amigus! </a>
-        </li>
-        <li>
-            <a href="https://github.com/nicolasfvasconcelos?tab=repositories" target="_blank"> Gitzin, amigus! </a>
-        </li>
-        <li>
-            <a href="contato.html"> Não use, mas se quiser, pode! (Contato)</a>
-        </li>
+     <!-- Menu = lista de itens -->
+    <!-- Há dois tipos de listas: 1- ordenada (OrderList - <ol>)com numeros ao lado e 2-desordenada(UnorderList <ul> ) -->
+    <ul id = "menu">
+        <!-- Toda lista terá seus itens <li> -->
+            <!-- <a> = tag de link// href = onde quero mandar -->   
+        <!-- target ="_blank" atributo que permite abrir link numa outra aba -->
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="contato.html">CONTATO</a></li>
     </ul>
-    <h1>Nicolas, o doido em: </h1>
-    <h2>Como é viver no NicolasVerso e expulsar todos os intrusos, assim como a Wanda Rainha expulsou os "nada bem-vindos" de sua realidade NÃO real! </h2>
-    <img 
-    width="250" 
-    height="250" 
-    src="Assets/Imagem/Doido.jpg" alt="Wanda rainha, as outras são nadinha!"> 
-    <p>
-        Mussum Ipsum, cacilds vidis litro abertis. Aenean aliquam molestie leo, vitae iaculis nisl. Admodum accumsan disputationi eu sit. Vide electram sadipscing et per. Viva Forevis aptent taciti sociosqu ad litora torquent. Detraxit consequat et quo num tendi nada.
-    </p>
-    <p>
-        Mais vale um bebadis conhecidiss, que um alcoolatra anonimis. Posuere libero varius. Nullam a nisl ut ante blandit hendrerit. Aenean sit amet nisi. Nullam volutpat risus nec leo commodo, ut interdum diam laoreet. Sed non consequat odio. Si num tem leite então bota uma pinga aí cumpadi!
-        Praesent vel viverra nisi. Mauris aliquet nunc non turpis scelerisque, eget. Quem num gosta di mé, boa gentis num é. Cevadis im ampola pa arma uma pindureta. Atirei o pau no gatis, per gatis num morreus.
-    </p>
-    <img src="Assets/Imagem/Wanda.jpg" alt="Wanda rainha, as outras são nadinha!">
-    <p>
-        Diuretics paradis num copo é motivis de denguis. Pra lá , depois divoltis porris, paradis. Todo mundo vê os porris que eu tomo, mas ninguém vê os tombis que eu levo! Tá deprimidis, eu conheço uma cachacis que pode alegrar sua vidis.
-    </p>
-    <p>
-        Sapien in monti palavris qui num significa nadis i pareci latim. Em pé sem cair, deitado sem dormir, sentado sem cochilar e fazendo pose. Si u mundo tá muito paradis? Toma um mé que o mundo vai girarzis! Copo furadis é disculpa de bebadis, arcu quam euismod magna.
-        Quem manda na minha terra sou euzis! Delegadis gente finis, bibendum egestas augue arcu ut est. Praesent malesuada urna nisi, quis volutpat erat hendrerit non. Nam vulputate dapibus. Casamentiss faiz malandris se pirulitá.
-    </p>
+    <br>
+    <br>
+    <h1 class="center">SOBRE O NICOLAS:</h1>
+    <!-- tag div = dividir -->
+    <!-- container = classe do flex box -->
+    <!-- container é maior que div, ou seja, div são pequenos pedaçoes do container -->
+    <!-- Consultar w3school para entender melhor de flex-box -->
+    <!-- dentro do container: textos e imagens -->
+ <div class = "container">
+            <div class = "espaco justificar">
+                <p>
+                    Mussum Ipsum, cacilds vidis litro abertis. Aenean aliquam molestie leo, vitae iaculis nisl. Admodum accumsan disputationi eu sit. Vide electram sadipscing et per. Viva Forevis aptent taciti sociosqu ad litora torquent. Detraxit consequat et quo num tendi nada.
+                </p>
 
-    <h2>Wanda rainha, mostrando quem manda no Wandaverso!</h2>
+                <p>
+                    Mais vale um bebadis conhecidiss, que um alcoolatra anonimis. Posuere libero varius. Nullam a nisl ut ante blandit hendrerit. Aenean sit amet nisi. Nullam volutpat risus nec leo commodo, ut interdum diam laoreet. Sed non consequat odio. Si num tem leite então bota uma pinga aí cumpadi! Praesent vel viverra nisi. Mauris aliquet nunc non turpis scelerisque, eget. Quem num gosta di mé, boa gentis num é. Cevadis im ampola pa arma uma pindureta. Atirei o pau no gatis, per gatis num morreus.
+                </p>
 
-    <iframe 
-    width="560" 
-    height="315" 
-    src="https://www.youtube.com/embed/J-HJUmpmLKM" 
-    frameborder="0" 
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-    allowfullscreen>
-    </iframe>
+                <p>
+                    Mussum Ipsum, cacilds vidis litro abertis. Aenean aliquam molestie leo, vitae iaculis nisl. Admodum accumsan disputationi eu sit. Vide electram sadipscing et per. Viva Forevis aptent taciti sociosqu ad litora torquent. Detraxit consequat et quo num tendi nada. Si num tem leite então bota uma pinga aí cumpadi! Praesent vel viverra nisi. Mauris aliquet nunc non turpis scelerisque, eget. Quem num gosta di mé, boa gentis num é. Cevadis im ampola pa arma uma pindureta. Atirei o pau no gatis, per gatis num morreus.
+                </p>
+            </div>
+
+          
+            <div>
+                <img 
+                 class="bordaFoto";
+                 width="350" 
+                 height="350" 
+                 src="Assets/Imagem/Doido.jpg"  
+                 alt="Nick rainho, os outros são nadinha!">
+            </div>      
+</div>
+            <h2 class ="center";>Música que eu gosto:</h2>
+            <div class="container m-baixo";> 
+                <div>
+
+                    <!-- iframe= um frame = pedaço de um site dentro do nosso site -->
+                    <!-- atributos = azul claro -->
+                    <!-- width = largura// height = altura// frameborder = borda// allow = permissões  -->
+                    <iframe 
+                        width="560" 
+                        height="315" 
+                        src="https://www.youtube.com/embed/tHZKXGrlxwU" 
+                        title="YouTube video player" frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                    </iframe>
+                 </div>
+            </div>
+
+        <hr> <!-- <hr> separa uma sessão de outra-->
+            <!-- Rodapé -->
+        <footer>    
+            <div class="container">
+                <!-- tamanho = diminuindo tamanho dos icones -->
+                <!-- target="_blank" = abrir link em outra página -->
+                <a href="https://www.facebook.com/" target="_blank">
+                    <img class="tamanho" src="Assets/Imagem/facebook.png" alt="Logo do Facebook">
+                </a>
+
+                <a href = "https://www.instagram.com/" target="_blank">
+                    <img class="tamanho" src="Assets/Imagem/instagram.png" alt="Logo do Instagram">
+                </a>
+
+                <a href ="https://www.linkedin.com/in/nicolas-f-vasconcelos/" target="_blank">
+                    <img class="tamanho" src="Assets/Imagem/linkedin.png" alt="Logo do LinkedIn">
+                </a>
+
+                <a href ="https://github.com/nicolasfvasconcelos" target="_blank">
+                    <img class="tamanho" src="Assets/Imagem/github-logo-silhouette-in-a-square.png" alt="Logo do GitHub">
+                </a>
+
+            </div>
+            
+            <p class = "center">
+                Todos os direitos reservados: Nicolas F. Vasconcelos &copy
+                <!-- &copy = simbolo do Czinho -->
+            </p>
+            
+        </footer>
+
+    
 
 </body>
+
 </html>
