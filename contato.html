@@ -28,26 +28,28 @@
     <h1 class = "center">FALE CONOSCO!</h1>
     
     <div class="container">
-
+<!-- evento onkeyup = chama a função quando o usuário para de digitar -->
         <div>
             <form>
                 <label for="nome">Nome:</label><br>
-                <input type="text" id="nome">
+                <input type="text" id="nome" onkeyup="validaNome()">
+                <div id="txtNome"></div>
             </form>
-            <br>
             <br>
             <form>
                 <label for="email">E-mail:</label><br>
-                <input type="email" id="email">
+                <input type="email" id="email" onkeyup="validaEmail()">
+                <div id="txtEmail"></div>
             </form>  
             <br>
             <br>
             <form>
                 <label for="assunto">Assunto:</label><br>
-                <textarea name="assunto" id="assunto" cols="60" rows="10"></textarea>
+                <textarea name="assunto" id="assunto" cols="60" rows="10" onkeyup="validaAssunto()"></textarea>
+                <div id="txtAssunto"></div>
                 <br>
-                <br>
-                <button>Enviar</button>
+                <!-- onclick = para reconhecer quando clicar em enviar -->
+                <button onclick="enviar()">Enviar</button>
             </form>  
         </div>
 
@@ -55,7 +57,7 @@
             
             <p>Endereço: Rua Picinguaba, n°547, Bairro Vila Santa Isabel - SP</p>
 
-            <iframe class="espaco" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.308898287842!2d-46.539941185384016!3d-23.557346867328373!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5dde7ef09e03%3A0xac7dc89f3f99c785!2sR.%20Picinguaba%2C%20547%20-%20Vila%20Santa%20Isabel%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2003432-000!5e0!3m2!1spt-BR!2sbr!4v1616862338077!5m2!1spt-BR!2sbr" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <iframe class="espaco" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.308898287842!2d-46.539941185384016!3d-23.557346867328373!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5dde7ef09e03%3A0xac7dc89f3f99c785!2sR.%20Picinguaba%2C%20547%20-%20Vila%20Santa%20Isabel%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2003432-000!5e0!3m2!1spt-BR!2sbr!4v1616862338077!5m2!1spt-BR!2sbr" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" id="mapa" onmousemove="mapaZoom()" onmouseout="mapaNormal()"></iframe>
         </div>   
             
           
@@ -90,6 +92,10 @@
                     </p>
                     
                 </footer>
+
+                <!-- Script é colocado no final// antes de fechar o body -->
+                <!-- SRC dentro é pra simbolizar que vou trabalhar com uma página externa -->
+                <script src="Assets/JS/script.js"></script>
 </body>
 
 </html>
